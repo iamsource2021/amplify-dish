@@ -1,0 +1,55 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifydish-dev-123137-authRole",
+      "UnauthRoleArn": "arn:aws:iam::739297781662:role/amplify-amplifydish-dev-123137-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::739297781662:role/amplify-amplifydish-dev-123137-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+      "UnauthRoleName": "amplify-amplifydish-dev-123137-unauthRole",
+      "StackName": "amplify-amplifydish-dev-123137",
+      "StackId": "arn:aws:cloudformation:us-east-2:739297781662:stack/amplify-amplifydish-dev-123137/55475b90-1db5-11ee-85ae-06ae2a2e53a3",
+      "AmplifyAppId": "d2tgbdkrx8cdxv"
+    },
+    "categories": {
+      "api": {
+        "amplifydish": {},
+        "api7cb904dc": {}
+      },
+      "function": {
+        "amplifydish49195dc3": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydish49195dc3-4743755a716754446655-build.zip"
+        },
+        "amplifydisha4eac297": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydisha4eac297-51506974303941454a78-build.zip"
+        },
+        "amplifydish7381634c": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydish7381634c-524d794f31362b316839-build.zip"
+        },
+        "amplifydish2387073f": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydish2387073f-7548676e6d4355437050-build.zip"
+        },
+        "amplifydishb5964d80": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydishb5964d80-374c5a544553366c2f4f-build.zip"
+        },
+        "amplifydishb9b5e2f0": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydishb9b5e2f0-6671706c33766f726565-build.zip"
+        },
+        "amplifydish3c92c64a": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydish3c92c64a-7a455372595278707363-build.zip"
+        },
+        "amplifydish56df4c51": {
+          "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
+          "s3Key": "amplify-builds/amplifydish56df4c51-7a4c5a4868574443644a-build.zip"
+        }
+      }
+    }
+  }
+}

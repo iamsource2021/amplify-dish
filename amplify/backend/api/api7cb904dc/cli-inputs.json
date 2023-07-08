@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/servicios/auth/projectos": {
+      "name": "/servicios/auth/projectos",
+      "lambdaFunction": "amplifydish3c92c64a",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/servicios/open/projectos": {
+      "name": "/servicios/open/projectos",
+      "lambdaFunction": "amplifydish56df4c51",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
