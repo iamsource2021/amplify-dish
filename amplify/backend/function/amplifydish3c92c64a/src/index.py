@@ -22,27 +22,30 @@ async def query():
     try:
         endpoint = os.getenv('API_AMPLIFYDISH_GRAPHQLAPIENDPOINTOUTPUT')
         api_key = os.getenv('API_AMPLIFYDISH_GRAPHQLAPIKEYOUTPUT')
-        return await execute_query(
+        result = await execute_query(
             listProjects(),
             {},
             endpoint,
             api_key
         )
+        return HttpResponse(200,result)
 
     except Exception as e:
-        raise ClientGraphqlException(str(e.args))
+        print(e.args)
+        # raise ClientGraphqlException(str(e.args))
 
     except TransportQueryError as e:
-        raise ClientGraphqlException(str(e.args))
+        print(e.args)
+        # raise ClientGraphqlException(str(e.args))
     
 async def main(event):
     print('received event:')
     print(event)
 
 
-    result = await query()
+    return await query()
     # return await is_valid_signature_stripe(result,event)
-    return HttpResponse(200,{})   
+       
 
 def handler(event, context):
     # Handle the event

@@ -19,7 +19,7 @@
       "function": {
         "amplifydish3c92c64a": {
           "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
-          "s3Key": "amplify-builds/amplifydish3c92c64a-4472726a49784c755072-build.zip"
+          "s3Key": "amplify-builds/amplifydish3c92c64a-6d6161782f3575794d6a-build.zip"
         },
         "amplifydish56df4c51": {
           "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
