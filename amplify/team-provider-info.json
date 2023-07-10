@@ -25,6 +25,9 @@
           "deploymentBucketName": "amplify-amplifydish-dev-123137-deployment",
           "s3Key": "amplify-builds/amplifydish56df4c51-7a4c5a4868574443644a-build.zip"
         }
+      },
+      "auth": {
+        "amplifydish0a066f5f": {}
       }
     }
   }
