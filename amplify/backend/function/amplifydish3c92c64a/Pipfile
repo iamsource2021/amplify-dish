@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 src = {editable = true, path = "./src"}
+gql = {extras = ["aiohttp"], version = "*"}
+aiobotocore = "*"
 
 [requires]
 python_version = "3.8"

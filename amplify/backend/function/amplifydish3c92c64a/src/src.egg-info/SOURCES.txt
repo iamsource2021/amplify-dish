@@ -1,5 +1,11 @@
 index.py
+pyproject.toml
 setup.py
+client_graphql/__ init __.py
+client_graphql/client_graphql_exception.py
+client_graphql/index.py
+client_graphql/mutation.py
+client_graphql/query.py
 src.egg-info/PKG-INFO
 src.egg-info/SOURCES.txt
 src.egg-info/dependency_links.txt

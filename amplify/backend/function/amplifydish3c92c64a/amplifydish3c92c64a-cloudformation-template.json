@@ -15,6 +15,18 @@
     },
     "s3Key": {
       "Type": "String"
+    },
+    "apiamplifydishGraphQLAPIIdOutput": {
+      "Type": "String",
+      "Default": "apiamplifydishGraphQLAPIIdOutput"
+    },
+    "apiamplifydishGraphQLAPIEndpointOutput": {
+      "Type": "String",
+      "Default": "apiamplifydishGraphQLAPIEndpointOutput"
+    },
+    "apiamplifydishGraphQLAPIKeyOutput": {
+      "Type": "String",
+      "Default": "apiamplifydishGraphQLAPIKeyOutput"
     }
   },
   "Conditions": {
@@ -69,6 +81,15 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
+            },
+            "API_AMPLIFYDISH_GRAPHQLAPIIDOUTPUT": {
+              "Ref": "apiamplifydishGraphQLAPIIdOutput"
+            },
+            "API_AMPLIFYDISH_GRAPHQLAPIENDPOINTOUTPUT": {
+              "Ref": "apiamplifydishGraphQLAPIEndpointOutput"
+            },
+            "API_AMPLIFYDISH_GRAPHQLAPIKEYOUTPUT": {
+              "Ref": "apiamplifydishGraphQLAPIKeyOutput"
             }
           }
         },
@@ -160,6 +181,53 @@
                   }
                 ]
               }
+            }
+          ]
+        }
+      }
+    },
+    "AmplifyResourcesPolicy": {
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "amplify-lambda-execution-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "appsync:GraphQL"
+              ],
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:aws:appsync:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":apis/",
+                      {
+                        "Ref": "apiamplifydishGraphQLAPIIdOutput"
+                      },
+                      "/types/Query/*"
+                    ]
+                  ]
+                }
+              ]
             }
           ]
         }

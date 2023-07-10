@@ -41,18 +41,19 @@
   },
   "auth": {},
   "function": {
-    "amplifydish2387073f": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "amplifydish3c92c64a": {
       "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "amplifydish49195dc3": {
-      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput",
+            "GraphQLAPIKeyOutput"
+          ],
+          "category": "api",
+          "resourceName": "amplifydish"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     },
@@ -60,45 +61,9 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
-    },
-    "amplifydish7381634c": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "amplifydisha4eac297": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "amplifydishb5964d80": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "amplifydishb9b5e2f0": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_amplifydish2387073f_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydish2387073f"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydish2387073f_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydish2387073f"
-        }
-      ]
-    },
     "AMPLIFY_function_amplifydish3c92c64a_deploymentBucketName": {
       "usedBy": [
         {
@@ -115,22 +80,6 @@
         }
       ]
     },
-    "AMPLIFY_function_amplifydish49195dc3_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydish49195dc3"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydish49195dc3_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydish49195dc3"
-        }
-      ]
-    },
     "AMPLIFY_function_amplifydish56df4c51_deploymentBucketName": {
       "usedBy": [
         {
@@ -144,70 +93,6 @@
         {
           "category": "function",
           "resourceName": "amplifydish56df4c51"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydish7381634c_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydish7381634c"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydish7381634c_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydish7381634c"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydisha4eac297_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydisha4eac297"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydisha4eac297_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydisha4eac297"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydishb5964d80_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydishb5964d80"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydishb5964d80_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydishb5964d80"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydishb9b5e2f0_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydishb9b5e2f0"
-        }
-      ]
-    },
-    "AMPLIFY_function_amplifydishb9b5e2f0_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "amplifydishb9b5e2f0"
         }
       ]
     }
